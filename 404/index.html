@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="name">
+        <h1>woops... uhhhh i can fix this</h1>
+        <h3>- mckay </h3>
+    </div>
+
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+$(document).ready(function(){
+var header = $('body');
+
+var backgrounds = new Array(
+    'url(./img/404-1.gif)'
+  , 'url(./img/404-2.gif)'
+  , 'url(./img/404-3.gif)'
+  , 'url(./img/404.gif)'
+  , 'url(./img/404-4.gif)'
+  , 'url(./img/404-5.gif)'
+);
+
+var current = 0;
+
+function nextBackground() {
+    current++;
+    current = current % backgrounds.length;
+    header.css('background-image', backgrounds[current]);
+}
+setInterval(nextBackground, 1000);
+
+header.css('background-image', backgrounds[0]);
+});
+</script>
+    
+</body>
+</html>
