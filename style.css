@@ -1,0 +1,12 @@
+* {
+  color: white;
+}
+
+.name {
+  background: rgba(0, 0, 0, 0.498);
+  width: 200px;
+  position: fixed;
+  top: 40%;
+  left: 40%;
+  padding: 30px;
+}
